@@ -7,29 +7,23 @@ export default function header() {
       <div>
         <h3 className="text-white">ESCOBATE</h3>
       </div>
-      <div className="w-60" >
-        <ul className="flex justify-around items-center w-96 h-20 cursor-pointer ">
+      <div className="w-60">
+        <ul className=" justify-around items-center w-96 h-20 cursor-pointer flex  ">
           <Link href="/">
-          <li className="text-zinc-400 hover:text-zinc-50">
-            Home
-          </li>
+            <li className="text-zinc-400 hover:text-zinc-50">Home</li>
           </Link>
           <Link href="/About">
-          <li className="text-zinc-400 hover:text-zinc-50" >
-            About
-          </li>
+            <li className="text-zinc-400 hover:text-zinc-50">About</li>
           </Link>
-          <li className="text-zinc-400 hover:text-zinc-50">
-            Contact
-          </li>
-          <li className="text-zinc-400 hover:text-zinc-50">
-            Music
-          </li>
+          <Link href="/Contact">
+          <li className="text-zinc-400 hover:text-zinc-50">Contact</li>
+          </Link>
+          <li className="text-zinc-400 hover:text-zinc-50">Music</li>
         </ul>
       </div>
       <div className="flex gap-3">
-        <User className="cursor-pointer " />
-        <Equal className="cursor-pointer" />
+        <User className="cursor-pointer  text-white" />
+        <Equal className="cursor-pointer text-white" />
       </div>
     </nav>
   );
